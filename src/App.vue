@@ -15,7 +15,7 @@
                         </MenuItem>
                         <MenuItem name="3">
                             <Icon type="ios-analytics"></Icon>
-                            Item 3
+                            <router-link to="/table">Table</router-link>
                         </MenuItem>
                         <MenuItem name="4">
                             <Icon type="ios-paper"></Icon>
