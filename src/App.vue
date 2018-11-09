@@ -19,7 +19,7 @@
                         </MenuItem>
                         <MenuItem name="4">
                             <Icon type="ios-paper"></Icon>
-                            Item 4
+                            <router-link to="/form">Form</router-link>
                         </MenuItem>
                     </div>
                 </Menu>
