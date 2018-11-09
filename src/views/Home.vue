@@ -1,8 +1,10 @@
 <template>
-    <div id="home">
-        <img alt="Vue logo" src="../assets/logo.png">
-        <HelloWorld msg="Welcome to Your Vue.js App" />
-    </div>
+    <Row type="flex" justify="center">
+        <div id="home">
+            <img alt="Vue logo" src="../assets/logo.png">
+            <HelloWorld msg="Welcome to Your Vue.js App" />
+        </div>
+    </Row>
 </template>
 
 <script>
