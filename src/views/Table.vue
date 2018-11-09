@@ -101,6 +101,24 @@
                         render: (h, params) => {
                             return h('div', this.formatDate(this.tableData1[params.index].update));
                         }
+                    },
+                    {
+                        title: 'Operate',
+                        render: (h, params) => {
+                            return h('div', [
+                                h('Button', {
+                                    props: {
+                                        type: 'error',
+                                        size: 'small'
+                                    },
+                                    on: {
+                                        click: () => {
+                                            this.remove(params.index)
+                                        }
+                                    }
+                                }, 'Notify')
+                            ]);
+                        }
                     }
                 ]
             }
@@ -144,6 +162,10 @@
             changePage () {
                 // The simulated data is changed directly here, and the actual usage scenario should fetch the data from the server
                 this.tableData1 = this.mockTableData1();
+            },
+            remove(index) {
+                this.tableData1.splice(index, 1);
+                this.$Notice.success({ title: 'Notice', desc: 'Deleted' });
             }
         }
     }
