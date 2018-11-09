@@ -6,20 +6,28 @@
                     <div class="layout-logo"></div>
                     <div class="layout-nav">
                         <MenuItem name="1">
-                            <Icon type="ios-navigate"></Icon>
-                            <router-link to="/home">Home</router-link>
+                            <router-link to="/home">
+                                <Icon type="ios-navigate"></Icon>
+                                Home
+                            </router-link>
                         </MenuItem>
                         <MenuItem name="2">
-                            <Icon type="ios-keypad"></Icon>
-                            <router-link to="/about">About</router-link>
+                            <router-link to="/about">
+                                <Icon type="ios-keypad"></Icon>
+                                About
+                            </router-link>
                         </MenuItem>
                         <MenuItem name="3">
-                            <Icon type="ios-analytics"></Icon>
-                            <router-link to="/table">Table</router-link>
+                            <router-link to="/table">
+                                <Icon type="ios-analytics"></Icon>
+                                Table
+                            </router-link>
                         </MenuItem>
                         <MenuItem name="4">
-                            <Icon type="ios-paper"></Icon>
-                            <router-link to="/form">Form</router-link>
+                            <router-link to="/form">
+                                <Icon type="ios-paper"></Icon>
+                                Form
+                            </router-link>
                         </MenuItem>
                     </div>
                 </Menu>
@@ -65,5 +73,8 @@
     }
     .layout-footer-center{
         text-align: center;
+    }
+    a {
+        color: #eee;
     }
 </style>
