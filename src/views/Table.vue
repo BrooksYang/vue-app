@@ -116,7 +116,7 @@
                                             this.remove(params.index)
                                         }
                                     }
-                                }, 'Notify')
+                                }, 'Delete')
                             ]);
                         }
                     }
