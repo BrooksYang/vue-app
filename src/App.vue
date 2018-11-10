@@ -29,6 +29,12 @@
                                 Form
                             </router-link>
                         </MenuItem>
+                        <MenuItem name="5">
+                            <span @click="logout">
+                                <Icon type="ios-paper"></Icon>
+                                Logout
+                            </span>
+                        </MenuItem>
                     </div>
                 </Menu>
             </Header>
@@ -44,7 +50,13 @@
 
 <script>
     export default {
+        name: 'app',
 
+        methods: {
+            logout() {
+                this.$store.dispatch('logout');
+            }
+        }
     }
 </script>
 
@@ -67,7 +79,7 @@
         left: 20px;
     }
     .layout-nav{
-        width: 420px;
+        width: 520px;
         margin: 0 auto;
         margin-right: 20px;
     }

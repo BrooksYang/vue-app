@@ -50,7 +50,6 @@
                 <FormItem>
                     <Button type="primary" @click="handleSubmit('formValidate')">Submit</Button>
                     <Button @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button>
-                    <Button @click="logout()" style="margin-left: 8px">Log out</Button>
                 </FormItem>
             </Form>
         </Col>
@@ -113,12 +112,6 @@
             },
             handleReset (name) {
                 this.$refs[name].resetFields();
-            },
-
-            logout() {
-                console.log(this.$store.state.user);
-                this.$store.dispatch('logout');
-                console.log(this.$store.state.user);
             }
         }
     }
